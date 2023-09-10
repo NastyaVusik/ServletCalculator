@@ -9,9 +9,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bc7b91d9-9355-49a6-868e-ffc41031e14b" name="Changes" comment="classes HelloServlet, Scope1Servlet, Scope2Servlet were created">
+    <list default="true" id="bc7b91d9-9355-49a6-868e-ffc41031e14b" name="Changes" comment="Methods for scope were created">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/HelloServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/HelloServlet.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,8 +48,8 @@
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/Nastya/IdeaProjects/ServletCalculator&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;Lesson__22&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Nastya/IdeaProjects/ConsoleCalculator&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -165,8 +164,20 @@
       <workItem from="1694073831444" duration="3261000" />
       <workItem from="1694077152037" duration="1295000" />
       <workItem from="1694162145571" duration="7460000" />
-      <workItem from="1694202134454" duration="300000" />
+      <workItem from="1694202134454" duration="1912000" />
+      <workItem from="1694268430190" duration="663000" />
+      <workItem from="1694329173194" duration="1041000" />
+      <workItem from="1694331163483" duration="600000" />
     </task>
+    <task id="LOCAL-00001" summary="Methods for scope were created">
+      <option name="closed" value="true" />
+      <created>1694202776515</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1694202776515</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -185,6 +196,18 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="classes HelloServlet, Scope1Servlet, Scope2Servlet were created" />
-    <option name="LAST_COMMIT_MESSAGE" value="classes HelloServlet, Scope1Servlet, Scope2Servlet were created" />
+    <MESSAGE value="Methods for scope were created" />
+    <option name="LAST_COMMIT_MESSAGE" value="Methods for scope were created" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/Scope2Servlet.java</url>
+          <line>23</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
