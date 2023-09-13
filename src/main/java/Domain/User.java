@@ -2,12 +2,12 @@ package Domain;
 
 public class User {
     private String name;
-    private String userName;
+    private String username;
     private String password;
 
-    public User(String name, String userName, String password) {
+    public User(String name, String username, String password) {
         this.name = name;
-        this.userName = userName;
+        this.username = username;
         this.password = password;
     }
 
@@ -19,12 +19,12 @@ public class User {
         this.name = name;
     }
 
-    public String getUserName() {
-        return userName;
+    public String getusername() {
+        return username;
     }
 
-    public void setUserName(String userName) {
-        this.userName = userName;
+    public void setusername(String username) {
+        this.username = username;
     }
 
     public String getPassword() {
@@ -39,8 +39,11 @@ public class User {
     public String toString() {
         return "User{" +
                 "name='" + name + '\'' +
-                ", username='" + userName + '\'' +
+                ", username='" + username + '\'' +
                 ", password='" + password + '\'' +
                 '}';
     }
 }
+
+
+
