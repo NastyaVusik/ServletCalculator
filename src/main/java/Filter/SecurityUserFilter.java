@@ -19,7 +19,7 @@ public class SecurityUserFilter extends HttpFilter {
             chain.doFilter(req, res);
         }
         else {
-            res.sendError(401);
+            res.sendError(401, "ser isn't found");
         }
 
 

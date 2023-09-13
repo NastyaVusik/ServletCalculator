@@ -25,4 +25,10 @@ public class InMemoryUserStorage {
         }
         return Optional.empty();
     }
+
+    public void getList(){
+            System.out.println("\nList of users:\n");
+            users.stream().forEach(result-> System.out.println(result +"\n"));
+        }
+
 }

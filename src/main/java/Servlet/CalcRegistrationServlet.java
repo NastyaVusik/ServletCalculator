@@ -13,7 +13,7 @@ import java.io.IOException;
 @WebServlet("/reg")         //localhost:8080/reg?name=Test&userName=test&password=test
 public class CalcRegistrationServlet extends HttpServlet {
 
-    InMemoryUserStorage userStorage = new InMemoryUserStorage();
+    private final InMemoryUserStorage userStorage = new InMemoryUserStorage();
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
@@ -23,9 +23,9 @@ public class CalcRegistrationServlet extends HttpServlet {
 
         User user = new User(name, userName, password);
         userStorage.save(user);
-//        resp.getWriter().println("Registration was successful!");
+
 
         resp.sendRedirect("/");
-
+        resp.getWriter().println("Registration was successful!");
     }
 }

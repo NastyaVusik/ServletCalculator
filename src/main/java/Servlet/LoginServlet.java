@@ -13,7 +13,7 @@ import java.util.Optional;
 @WebServlet("/login")           //localhost:8080/login?userName=test&password=test
 public class LoginServlet extends HelloServlet{
 
-    InMemoryUserStorage userStorage = new InMemoryUserStorage();
+   private final InMemoryUserStorage userStorage = new InMemoryUserStorage();
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
@@ -24,8 +24,10 @@ public class LoginServlet extends HelloServlet{
 
         if(userByUserName.isPresent()){
             User user = userByUserName.get();
+
             if(user.getPassword().equals(password)){
-                req.getSession().setAttribute("currentUser", "user");
+                req.getSession(true).setAttribute("currentUser", "user");
+    resp.sendRedirect("/");
             }
             else {
                 resp.getWriter().println("Password isn't correct!");
@@ -37,4 +39,25 @@ public class LoginServlet extends HelloServlet{
         }
 
     }
+
+//    protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+//        String username = req.getParameter("username");
+//        String password = req.getParameter("password");
+//
+//        Optional<User> byUsername = userStorage.findByUserName(username);
+//        if (byUsername.isPresent()) {
+//            User user = byUsername.get();
+//
+//            if(user.getPassword().equals(password)) {
+//                req.getSession(true).setAttribute("currentUser", user);
+//                resp.sendRedirect("/");
+//            } else {
+//                resp.getWriter().println("Wrong password!");
+//            }
+//        } else {
+//            resp.getWriter().println("User not found!");
+//        }
+//    }
+
+
 }
