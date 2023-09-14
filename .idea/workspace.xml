@@ -9,8 +9,21 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bc7b91d9-9355-49a6-868e-ffc41031e14b" name="Changes" comment="Methods for scope were created">
+    <list default="true" id="bc7b91d9-9355-49a6-868e-ffc41031e14b" name="Changes" comment="Class Listener was created">
+      <change afterPath="$PROJECT_DIR$/src/main/java/CalculatorHistory/History.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/CalculatorHistory/JDBCStorage/JDBCHistory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/CalculatorHistory/JDBCStorage/SaveNewUserInJDBC.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/CalculatorHistory/SaveNewUser.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Objects/CalcOperation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Objects/CalculatorUser.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Services/CalcUserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Services/OperationService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Services/RegistrationDate.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Servlets/RegistrationServlet.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/HelloServlet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Scope1Servlet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Scope2Servlet.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,6 +33,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -43,22 +57,30 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;Lesson__22&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/Nastya/IdeaProjects/ConsoleCalculator&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "ServletCalculatorRev0",
+    "last_opened_file_path": "C:/Users/Nastya/IdeaProjects/ServletCalculator",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="Objects" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="CalculatorHistory" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration name="Tomcat 9.0.80" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.80" ALTERNATIVE_JRE_ENABLED="false">
       <option name="OPEN_IN_BROWSER" value="false" />
@@ -168,6 +190,7 @@
       <workItem from="1694268430190" duration="663000" />
       <workItem from="1694329173194" duration="1041000" />
       <workItem from="1694331163483" duration="600000" />
+      <workItem from="1694695047696" duration="4109000" />
     </task>
     <task id="LOCAL-00001" summary="Methods for scope were created">
       <option name="closed" value="true" />
@@ -198,16 +221,5 @@
     <MESSAGE value="classes HelloServlet, Scope1Servlet, Scope2Servlet were created" />
     <MESSAGE value="Methods for scope were created" />
     <option name="LAST_COMMIT_MESSAGE" value="Methods for scope were created" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/Scope2Servlet.java</url>
-          <line>23</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>
