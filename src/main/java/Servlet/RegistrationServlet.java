@@ -44,6 +44,7 @@ public class RegistrationServlet extends HttpServlet {
 
         User user = new User(name, username, password);
         storage.save(user);
+        System.out.println("\n\nnew user:\n" + user);
 
         resp.sendRedirect("/");
     }
