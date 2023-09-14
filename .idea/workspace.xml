@@ -9,19 +9,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bc7b91d9-9355-49a6-868e-ffc41031e14b" name="Changes" comment="Classes LoginServlet and ServletUserFilter were created">
-      <change afterPath="$PROJECT_DIR$/src/main/java/Filter/SecurityFilter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Domain/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Domain/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Filter/SecurityUserFilter.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Filter/TestFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Filter/TestFilter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Listener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Listener.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Servlet/CalcRegistrationServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Servlet/RegistrationServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Servlet/CalculatorServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Servlet/CalculatorServlet.java" afterDir="false" />
+    <list default="true" id="bc7b91d9-9355-49a6-868e-ffc41031e14b" name="Changes" comment="Progect was created">
       <change beforePath="$PROJECT_DIR$/src/main/java/Servlet/HelloServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Servlet/HelloServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Servlet/LoginServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Servlet/LoginServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Servlet/LogoutServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Servlet/LogoutServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/UserStorage/InMemoryUserStorage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/UserStorage/InMemoryUserStorage.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -216,7 +205,15 @@
       <option name="project" value="LOCAL" />
       <updated>1694530929175</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Progect was created">
+      <option name="closed" value="true" />
+      <created>1694701213112</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1694701213112</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -238,6 +235,7 @@
     <MESSAGE value="Methods for scope were created" />
     <MESSAGE value="Small editions" />
     <MESSAGE value="Classes LoginServlet and ServletUserFilter were created" />
-    <option name="LAST_COMMIT_MESSAGE" value="Classes LoginServlet and ServletUserFilter were created" />
+    <MESSAGE value="Progect was created" />
+    <option name="LAST_COMMIT_MESSAGE" value="Progect was created" />
   </component>
 </project>

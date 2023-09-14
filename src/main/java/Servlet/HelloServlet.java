@@ -10,6 +10,7 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.util.Collection;
 
+@WebServlet(name = "HelloServlet", urlPatterns = "/") // localhost:8080 aka onliner.by
 public class HelloServlet extends HttpServlet {
 
     @Override
