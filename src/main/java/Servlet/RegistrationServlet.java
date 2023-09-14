@@ -32,7 +32,7 @@ import java.io.IOException;
 
 
 @WebServlet("/reg") // localhost:8080/reg?name=Test&username=test&password=test
-public class CalcRegistrationServlet extends HttpServlet {
+public class RegistrationServlet extends HttpServlet {
 
     private final InMemoryUserStorage storage = new InMemoryUserStorage();
 
@@ -41,10 +41,11 @@ public class CalcRegistrationServlet extends HttpServlet {
         String name = req.getParameter("name");
         String username = req.getParameter("username");
         String password = req.getParameter("password");
-        System.out.println("\nusername:\n" + username);
+
         User user = new User(name, username, password);
         storage.save(user);
-        System.out.println("\nUser:\n" + user);
+
         resp.sendRedirect("/");
     }
 }
+

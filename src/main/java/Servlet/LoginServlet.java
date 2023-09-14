@@ -11,38 +11,30 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.util.Optional;
 
-@WebServlet("/login")           //localhost:8080/login?username=test&password=test
+@WebServlet("/login") // localhost:8080/login?username=test?password=test
 public class LoginServlet extends HttpServlet {
 
-   private final InMemoryUserStorage userStorage = new InMemoryUserStorage();
+    private final InMemoryUserStorage storage = new InMemoryUserStorage();
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         String username = req.getParameter("username");
         String password = req.getParameter("password");
 
-        Optional <User> userByusername = userStorage.findByusername(username);
-        System.out.println("\nUser:\n" + userByusername);
+        Optional<User> byUsername = storage.findByUsername(username);
+        if (byUsername.isPresent()) {
+            User user = byUsername.get();
 
-        if(userByusername.isPresent()){
-            User user = userByusername.get();
-
-            if(user.getPassword().equals(password)){
-                req.getSession(true).setAttribute("currentUser", "user");
-    resp.sendRedirect("/");
+            if(user.getPassword().equals(password)) {
+                req.getSession(true).setAttribute("currentUser", user);
+                resp.sendRedirect("/");
+            } else {
+                resp.getWriter().println("Wrong password!");
             }
-            else {
-                resp.getWriter().println("Password isn't correct!");
-            }
-
+        } else {
+            resp.getWriter().println("User not found!");
         }
-        else {
-            resp.getWriter().println("This user isn't found!");
-        }
-
     }
-
-
 }
 
 
