@@ -9,25 +9,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bc7b91d9-9355-49a6-868e-ffc41031e14b" name="Changes" comment="Fixing bugs">
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Checker/UserInfoChecker.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Connection/JDBCPostgresConnection.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Servlets/ApplicationListener.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Servlets/AuthorisationServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Servlets/CalculatorServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Servlets/LogoutServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Servlets/OperationHistoryServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Servlets/UserFilter.java" afterDir="false" />
+    <list default="true" id="bc7b91d9-9355-49a6-868e-ffc41031e14b" name="Changes" comment="Servlet package was completed">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/CalculatorHistory/JDBCStorage/JDBCHistory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/CalculatorHistory/JDBCStorage/JDBCHistory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/CalculatorHistory/JDBCStorage/SaveNewUserInJDBC.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/CalculatorHistory/JDBCStorage/JDBCUserStorageStorage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/CalculatorHistory/SaveNewUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/CalculatorHistory/UserStorage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Objects/CalcOperation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Objects/CalcOperation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Services/CalcUserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Services/CalcUserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Services/OperationService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Services/OperationService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Servlets/RegistrationServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Servlets/RegistrationServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/CalculatorHistory/JDBCStorage/JDBCUserStorageStorage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/CalculatorHistory/JDBCStorage/JDBCUserStorageStorage.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -206,7 +191,7 @@
       <workItem from="1694895703797" duration="2492000" />
       <workItem from="1694898647841" duration="451000" />
       <workItem from="1694981945594" duration="2159000" />
-      <workItem from="1695023896071" duration="11614000" />
+      <workItem from="1695023896071" duration="13980000" />
     </task>
     <task id="LOCAL-00001" summary="Methods for scope were created">
       <option name="closed" value="true" />
@@ -216,7 +201,15 @@
       <option name="project" value="LOCAL" />
       <updated>1694202776515</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Servlet package was completed">
+      <option name="closed" value="true" />
+      <created>1695036001778</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1695036001778</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -236,7 +229,10 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="classes HelloServlet, Scope1Servlet, Scope2Servlet were created" />
     <MESSAGE value="Methods for scope were created" />
-    <option name="LAST_COMMIT_MESSAGE" value="Methods for scope were created" />
+    <MESSAGE value="Packages for History, Services, Objects were created" />
+    <MESSAGE value="Fixing bugs" />
+    <MESSAGE value="Servlet package was completed" />
+    <option name="LAST_COMMIT_MESSAGE" value="Servlet package was completed" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
