@@ -1,6 +1,6 @@
 package CalculatorHistory.JDBCStorage;
 
-import CalculatorHistory.SaveNewUser;
+import CalculatorHistory.UserStorage;
 import Objects.CalculatorUser;
 import Services.RegistrationDate;
 
@@ -9,7 +9,9 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 
-public class SaveNewUserInJDBC implements SaveNewUser {
+public class JDBCUserStorageStorage implements UserStorage {
+
+//    JDBCPostgresConnection jdbcPostgresConnection = new JDBCPostgresConnection();
 
     private final String URL1 = "jdbc:postgresql://localhost:5432/postgres";
     private final String USER1 = "postgres";
@@ -19,7 +21,7 @@ public class SaveNewUserInJDBC implements SaveNewUser {
 
 
     @Override
-    public void  saveNewUser(CalculatorUser calculatorUser) {   //Integer userID, String username, String userEmail, String userPassword, String registrationDate
+    public void saveNewUser(CalculatorUser calculatorUser) {   //Integer userID, String username, String userEmail, String userPassword, String registrationDate
 
         try {
             Connection connection = DriverManager.getConnection(URL1, USER1, PASSWORD1);
@@ -38,7 +40,7 @@ public class SaveNewUserInJDBC implements SaveNewUser {
             ResultSet resultSet = prepareStatement.getGeneratedKeys();
 //            int generatedKey = 0;
 
-            if(resultSet.next()){
+            if (resultSet.next()) {
                 lastID = resultSet.getInt(5);
             }
 
@@ -80,7 +82,7 @@ public class SaveNewUserInJDBC implements SaveNewUser {
             statement.close();
 
 
-        } catch(SQLException e){
+        } catch (SQLException e) {
             throw new RuntimeException(e);
         }
 
@@ -90,7 +92,7 @@ public class SaveNewUserInJDBC implements SaveNewUser {
 
 
     @Override
-    public CalculatorUser getOldUserByID(Integer id){
+    public Optional <CalculatorUser> getOldUserByID(Integer id) {
 
         try {
             Connection connection = DriverManager.getConnection(URL1, USER1, PASSWORD1);
@@ -101,16 +103,18 @@ public class SaveNewUserInJDBC implements SaveNewUser {
 
             if (resultSet.next()) {
                 String userName = resultSet.getString(1);
-                Integer userID = resultSet.getInt(5);
                 String userEmail = resultSet.getString(2);
                 String userPassword = resultSet.getString(3);
                 String registrationDate = resultSet.getString(4);
+                Integer userID = resultSet.getInt(5);
 
                 CalculatorUser calculatorUser = new CalculatorUser(userID, userName, userEmail, userPassword, registrationDate);
 
-                return calculatorUser;
+                preparedStatement.close();
+
+                return Optional.of(calculatorUser);
             }
-        }catch (SQLException e) {
+        } catch (SQLException e) {
             throw new RuntimeException(e);
         }
 
@@ -120,24 +124,26 @@ public class SaveNewUserInJDBC implements SaveNewUser {
 
 
     @Override
-    public Optional<CalculatorUser> getUserByName(String userName){
+    public Optional<CalculatorUser> getUserByName(String username) {
 
         try {
             Connection connection = DriverManager.getConnection(URL1, USER1, PASSWORD1);
 
             PreparedStatement preparedStatement = connection.prepareStatement("select * from \"Calculator_users\" where name = ?");
-            preparedStatement.setString(1, userName);
+            preparedStatement.setString(1, username);
 
             ResultSet resultSet = preparedStatement.executeQuery();
 
-            if(resultSet.next()){
-                userName = resultSet.getString(1);
-                Integer userID = resultSet.getInt(5);
+            if (resultSet.next()) {
+                username = resultSet.getString(1);
                 String userEmail = resultSet.getString(2);
                 String userPassword = resultSet.getString(3);
                 String registrationDate = resultSet.getString(4);
+                Integer userID = resultSet.getInt(5);
 
-                CalculatorUser calculatorUser = new CalculatorUser(userID, userName, userEmail, userPassword, registrationDate);
+                CalculatorUser calculatorUser = new CalculatorUser(userID, username, userEmail, userPassword, registrationDate);
+
+                preparedStatement.close();
 
                 return Optional.of(calculatorUser);
 
@@ -149,4 +155,35 @@ public class SaveNewUserInJDBC implements SaveNewUser {
         return Optional.empty();
 
     }
+
+
+    @Override
+    public Optional<CalculatorUser> getUserByNamePassword(String username, String userPassword) {
+        try {
+            Connection connection = DriverManager.getConnection(URL1, USER1, PASSWORD1);
+            PreparedStatement preparedStatement = connection.prepareStatement("select *from \"Calculator_users\" where name = ?, username = ?");
+            preparedStatement.setString(1, username);
+            preparedStatement.setString(2, userPassword);
+
+            ResultSet resultSet = preparedStatement.executeQuery();
+
+            if (resultSet.next()) {
+                username = resultSet.getString(1);
+                String userEmail = resultSet.getString(2);
+                userPassword = resultSet.getString(3);
+                String registrationDate = resultSet.getString(4);
+                Integer userID = resultSet.getInt(5);
+
+                preparedStatement.close();
+
+                CalculatorUser calculatorUser = new CalculatorUser(username, userPassword);
+return Optional.of(calculatorUser);
+            }
+
+        } catch (SQLException e) {
+            throw new RuntimeException(e);
+        }
+        return Optional.empty();
+    }
+
 }

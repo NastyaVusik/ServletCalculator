@@ -14,7 +14,7 @@ public class OperationService {
     }
 
     //Method for realisation of operations with numbers
-    public double calculateResult(CalcOperation calcOperation, CalculatorUser calculatorUser) {            //Pass object calcOperation instead (double num1, double num2, String action)
+    public CalcOperation calculateResult(CalcOperation calcOperation, CalculatorUser calculatorUser) {            //Pass object calcOperation instead (double num1, double num2, String action)
 
         switch (calcOperation.getAction()) {
             case ("+") -> {
@@ -25,7 +25,7 @@ public class OperationService {
                 jdbcHistory.writeHistoryWithUser(calcOperation1, calculatorUser);           //!!!!!!!!!!!!!!!!!!!!! Changed from File storage
 
 //                inMemoryHistory.writeHistory(calcOperation1);
-                return res1;
+                return calcOperation;
             }
             case ("-") -> {
                 double res2 = calcOperation.getNum1() - calcOperation.getNum2();
@@ -35,7 +35,7 @@ public class OperationService {
                 jdbcHistory.writeHistoryWithUser(calcOperation2, calculatorUser);           //!!!!!!!!!!!!!!!!!!!!! Changed from File storage
 
 //                inMemoryHistory.writeHistory(calcOperation2);
-                return res2;
+                return calcOperation;
             }
             case ("*") -> {
                 double res3 = calcOperation.getNum1() * calcOperation.getNum2();
@@ -45,7 +45,7 @@ public class OperationService {
                 jdbcHistory.writeHistoryWithUser(calcOperation3, calculatorUser);           //!!!!!!!!!!!!!!!!!!!!! Changed from File storage
 
 //                inMemoryHistory.writeHistory(calcOperation3);
-                return res3;
+                return calcOperation;
             }
             case ("/") -> {
                 double res4 = calcOperation.getNum1() / calcOperation.getNum2();
@@ -55,7 +55,7 @@ public class OperationService {
                 jdbcHistory.writeHistoryWithUser(calcOperation4, calculatorUser);           //!!!!!!!!!!!!!!!!!!!!! Changed from File storage
 
 //                inMemoryHistory.writeHistory(calcOperation4);
-                return res4;
+                return calcOperation;
             }
         }
 

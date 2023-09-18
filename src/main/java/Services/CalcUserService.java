@@ -1,14 +1,14 @@
 package Services;
 
-import CalculatorHistory.JDBCStorage.SaveNewUserInJDBC;
-import CalculatorHistory.SaveNewUser;
+import CalculatorHistory.JDBCStorage.JDBCUserStorageStorage;
+import CalculatorHistory.UserStorage;
 import Objects.CalculatorUser;
 
 import java.util.Optional;
 
 public class CalcUserService {
 
-    private final SaveNewUser userStorage = new SaveNewUserInJDBC();
+    private final UserStorage userStorage = new JDBCUserStorageStorage();
 
     public void createNewUser(String username, String userEmail, String userPassword) {
         CalculatorUser calculatorUser = new CalculatorUser(username, userEmail, userPassword);
@@ -16,8 +16,13 @@ public class CalcUserService {
         userStorage.saveNewUser(calculatorUser);
     }
 
+
+    public Optional<CalculatorUser> logIn(String username, String userPassword){
+        return  userStorage.getUserByNamePassword(username, userPassword);
+    }
+
     public Optional<CalculatorUser> findByUserID(Integer ID) {
-        return Optional.ofNullable(userStorage.getOldUserByID(ID));
+        return userStorage.getOldUserByID(ID);
     }
 
 

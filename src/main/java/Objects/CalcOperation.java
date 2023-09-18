@@ -32,6 +32,7 @@ public class CalcOperation {
         this.userID = userID;
     }
 
+
     public CalcOperation(double num1, double num2, String action, double result, String formatDateTime) {
         this.num1 = num1;
         this.num2 = num2;

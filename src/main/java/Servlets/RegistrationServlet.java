@@ -1,6 +1,9 @@
 package Servlets;
 
 
+import CalculatorHistory.UserStorage;
+import Checker.UserInfoChecker;
+import Objects.CalculatorUser;
 import Services.CalcUserService;
 
 import javax.servlet.ServletException;
@@ -15,6 +18,14 @@ public class RegistrationServlet extends HttpServlet {
 
     CalcUserService calcUserService = new CalcUserService();
 
+    UserStorage userStorage;
+    UserInfoChecker userInfoChecker;
+
+    public RegistrationServlet(UserStorage userStorage){
+        this.userStorage = userStorage;
+        this.userInfoChecker = new UserInfoChecker(userStorage);
+    }
+
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         String username = req.getParameter("username");
@@ -23,6 +34,13 @@ public class RegistrationServlet extends HttpServlet {
 
         calcUserService.createNewUser(username, userEmail, userPassword);
 
-        resp.sendRedirect("/");
+        if (userInfoChecker.checkRegisterParameters(username, userEmail, userPassword)){
+            resp.getWriter().println("Your registration data is wrong or user with this data was already registered.\n" +
+                    "Please, try again...");
+        }
+        else{
+        calcUserService.createNewUser(username, userEmail, userPassword);
+            resp.sendRedirect("/login");
+        }
     }
 }

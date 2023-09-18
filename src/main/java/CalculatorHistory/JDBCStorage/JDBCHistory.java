@@ -9,17 +9,21 @@ import java.util.ArrayList;
 
 public class JDBCHistory implements History {
 
+    private  Connection connection;
+
+//   JDBCPostgresConnection jdbcPostgresConnection = new JDBCPostgresConnection();
 
     private final String URL1 = "jdbc:postgresql://localhost:5432/postgres";
     private final String USER1 = "postgres";
     private final String PASSWORD1 = "root";
-
 
     @Override
     public void writeHistory(CalcOperation calcOperation) {
 
         try {
             Connection connection = DriverManager.getConnection(URL1, USER1, PASSWORD1);
+
+//            connection = jdbcPostgresConnection.getPostgresConnection();
 
             PreparedStatement prepareStatement = connection.prepareStatement("insert into \"Calculation_history\" values (?, ?, ?, ?, ?)");
             prepareStatement.setDouble(1, calcOperation.getNum1());
