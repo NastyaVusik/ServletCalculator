@@ -16,7 +16,7 @@ import java.util.Optional;
 public class AuthorisationServlet extends HttpServlet {
 
     CalcUserService calcUserService = new CalcUserService();
-    UserInfoChecker userInfoChecker;
+    UserInfoChecker userInfoChecker = new UserInfoChecker();
 
 
     @Override

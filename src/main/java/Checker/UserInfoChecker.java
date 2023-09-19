@@ -14,9 +14,15 @@ public class UserInfoChecker {
         this.userStorage = userStorage;
     }
 
+    public UserInfoChecker() {
+
+    }
+
     private final String regexUsername = "^([^\\s]{1,16})$";
     private final String regexUserPassword = "^(?!.* )(?=.*\\d)(?=.*[A-Z]).{8,15}$";
     private final String regexUserEmail = "^(.+)@(.+)$";
+
+
 
 
     //Method for checking all new user's parameters required for registration

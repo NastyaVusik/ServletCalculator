@@ -57,25 +57,26 @@ public class JDBCUserStorageStorage implements UserStorage {
 
     @Override
     public List<CalculatorUser> addUsersInfoToArrayList() {
-//        List<CalculatorUser> usersInfoFromJDBCToList = new ArrayList<>();
-        List<CalculatorUser> usersInfoFromJDBCToList;
+//        List<CalculatorUser> usersInfoFromJDBCToList;
 
+        List<CalculatorUser> usersInfoFromJDBCToList = new ArrayList<>();
 
         try {
             Connection connection = DriverManager.getConnection(URL1, USER1, PASSWORD1);
             Statement statement = connection.createStatement();
             ResultSet resultSet = statement.executeQuery("select * from \"Calculator_users\"");
-            usersInfoFromJDBCToList = new ArrayList<>();
+//            usersInfoFromJDBCToList = new ArrayList<>();
 
 
             while (resultSet.next()) {
-                Integer userID = resultSet.getInt(5);
-                String userName = resultSet.getString(1);
+
+                String username = resultSet.getString(1);
                 String userEmail = resultSet.getString(2);
                 String userPassword = resultSet.getString(3);
                 String registrationDate = resultSet.getString(4);
+                Integer userID = resultSet.getInt(5);
 
-                CalculatorUser calculatorUser = new CalculatorUser(userID, userName, userEmail, userPassword, registrationDate);
+                CalculatorUser calculatorUser = new CalculatorUser(userID, username, userEmail, userPassword, registrationDate);
 
                 usersInfoFromJDBCToList.add(calculatorUser);
             }
