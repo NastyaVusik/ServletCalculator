@@ -162,7 +162,7 @@ public class JDBCUserStorageStorage implements UserStorage {
     public Optional<CalculatorUser> getUserByNamePassword(String username, String userPassword) {
         try {
             Connection connection = DriverManager.getConnection(URL1, USER1, PASSWORD1);
-            PreparedStatement preparedStatement = connection.prepareStatement("select *from \"Calculator_users\" where name = ?, username = ?");
+            PreparedStatement preparedStatement = connection.prepareStatement("select * from \"Calculator_users\" where name = ? AND password = ?");
             preparedStatement.setString(1, username);
             preparedStatement.setString(2, userPassword);
 

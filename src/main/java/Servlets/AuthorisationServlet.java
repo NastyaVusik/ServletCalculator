@@ -27,7 +27,9 @@ public class AuthorisationServlet extends HttpServlet {
         if(userInfoChecker.checkLogInParameters(username, userPassword)){
             Optional<CalculatorUser> userByUsernamePassword = calcUserService.logIn(username, userPassword);
             if(userByUsernamePassword.isPresent()){
-                req.getSession().setAttribute("currentUser", "calculatorUser");
+
+                CalculatorUser calculatorUser = userByUsernamePassword.get();
+                req.getSession().setAttribute("currentUser", calculatorUser);
                 resp.sendRedirect("/");
             }
         }

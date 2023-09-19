@@ -1,6 +1,7 @@
 package Servlets;
 
 
+import CalculatorHistory.JDBCStorage.JDBCUserStorageStorage;
 import CalculatorHistory.UserStorage;
 import Checker.UserInfoChecker;
 import Objects.CalculatorUser;
@@ -20,17 +21,8 @@ public class RegistrationServlet extends HttpServlet {
 
     CalcUserService calcUserService = new CalcUserService();
 
-    UserStorage userStorage;
-    UserInfoChecker userInfoChecker = new UserInfoChecker(userStorage);
+    UserInfoChecker userInfoChecker = new UserInfoChecker(new JDBCUserStorageStorage());
 
-//    public RegistrationServlet(UserStorage userStorage){
-//        this.userStorage = userStorage;
-//        this.userInfoChecker = new UserInfoChecker(userStorage);
-//    }
-
-//    public RegistrationServlet(UserInfoChecker userInfoChecker){
-//        this.userInfoChecker = userInfoChecker;
-//    }
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {

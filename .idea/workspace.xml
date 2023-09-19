@@ -9,12 +9,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bc7b91d9-9355-49a6-868e-ffc41031e14b" name="Changes" comment="Servlet package was completed">
+    <list default="true" id="bc7b91d9-9355-49a6-868e-ffc41031e14b" name="Changes" comment="Small additions">
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/19e120d0-8945-4df0-be95-008123c1fcb4.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/19e120d0-8945-4df0-be95-008123c1fcb4.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/CalculatorHistory/JDBCStorage/JDBCUserStorageStorage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/CalculatorHistory/JDBCStorage/JDBCUserStorageStorage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Checker/UserInfoChecker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Checker/UserInfoChecker.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Servlets/AuthorisationServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Servlets/AuthorisationServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Servlets/RegistrationServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Servlets/RegistrationServlet.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
