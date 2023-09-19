@@ -5,39 +5,17 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
-@WebServlet(value = "/hello", loadOnStartup = 1)
+@WebServlet("/")
 public class HelloServlet extends HttpServlet {
-   @Override
-    public void init() throws ServletException{
 
-//       try {
-//           Thread.sleep(5000);
-//       } catch (InterruptedException e) {
-//           throw new RuntimeException(e);
-//       }
-       System.out.println("Hello, servlet!");
-    }
-
-    @Override
-    public void service(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-       super.service(request, response);
-       System.out.println("Servlet work");
-    }
-
-    @Override
-    public void destroy() {
-        super.destroy();
-        System.out.println("Servlet died");
-    }
-
+    private final GreetingStorage greetingStorage = new GreetingStorage();
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        String name = req.getParameter("name");
+        greetingStorage.save(name);
 
-//        System.out.println("Hello, World!!!");
-//        resp.getWriter().println("Hello, World!!!");
+        resp.getWriter().println("<h1>Hello," +  name + "!!!<h1>");
 
-        String name = req.getParameter("myName");
-        resp.getWriter().println("<h1><i>Hello " + name + " !</i></h1>");           //http://localhost:8080/hello?myName=Nastya
 
     }
 }
