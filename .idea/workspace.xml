@@ -10,14 +10,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bc7b91d9-9355-49a6-868e-ffc41031e14b" name="Changes" comment="Small additions">
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/AppListener.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/GreetingStorage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/df6eff10-fec2-4d2e-8fef-14ae56fef642.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/df6eff10-fec2-4d2e-8fef-14ae56fef642.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/HelloServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/HelloServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Scope1Servlet.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Scope2Servlet.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
