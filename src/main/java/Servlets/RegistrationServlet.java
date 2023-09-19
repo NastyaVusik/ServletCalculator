@@ -13,18 +13,24 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
+//localhost:8080/reg?username=test&userEmail=test@mail.ru&userPassword=Test12345!
+
 @WebServlet("/reg")
 public class RegistrationServlet extends HttpServlet {
 
     CalcUserService calcUserService = new CalcUserService();
 
     UserStorage userStorage;
-    UserInfoChecker userInfoChecker;
+    UserInfoChecker userInfoChecker = new UserInfoChecker(userStorage);
 
-    public RegistrationServlet(UserStorage userStorage){
-        this.userStorage = userStorage;
-        this.userInfoChecker = new UserInfoChecker(userStorage);
-    }
+//    public RegistrationServlet(UserStorage userStorage){
+//        this.userStorage = userStorage;
+//        this.userInfoChecker = new UserInfoChecker(userStorage);
+//    }
+
+//    public RegistrationServlet(UserInfoChecker userInfoChecker){
+//        this.userInfoChecker = userInfoChecker;
+//    }
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
