@@ -21,7 +21,7 @@ public class HelloUserServlet extends HttpServlet {
         }
         else {
             resp.getWriter().println("<h1>This user isn't exist...</h1>");
-            resp.getWriter().println("<h2 Hello, Guest!>");
+            resp.getWriter().println("<h2 Hello, Guest!<h2>");
         }
 
     }

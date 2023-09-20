@@ -11,6 +11,7 @@ public class CalcOperation {
     private String action;
     private double result;
     private Integer userID;
+    private CalculatorUser calculatorUser;
 
     //Date and time
     private String formatDateTime;
@@ -25,11 +26,11 @@ public class CalcOperation {
         this.action = action;
     }
 
-    public CalcOperation(double num1, double num2, String action, Integer userID) {
+    public CalcOperation(double num1, double num2, String action, CalculatorUser calculatorUser) {
         this.num1 = num1;
         this.num2 = num2;
         this.action = action;
-        this.userID = userID;
+        this.calculatorUser = calculatorUser;
     }
 
 
@@ -40,6 +41,16 @@ public class CalcOperation {
         this.result = result;
         this.formatDateTime = formatDateTime;
     }
+
+    public CalcOperation(double num1, double num2, String action, double result, String formatDateTime, CalculatorUser calculatorUser) {
+        this.num1 = num1;
+        this.num2 = num2;
+        this.action = action;
+        this.result = result;
+        this.formatDateTime = formatDateTime;
+        this.calculatorUser = calculatorUser;
+    }
+
 
     public CalcOperation(double num1, double num2, String action, double result, String formatDateTime, Integer userID) {
         this.num1 = num1;
@@ -95,6 +106,13 @@ public class CalcOperation {
         this.result = result;
     }
 
+    public CalculatorUser getCalculatorUser() {
+        return calculatorUser;
+    }
+
+    public void setCalculatorUser(CalculatorUser calculatorUser) {
+        this.calculatorUser = calculatorUser;
+    }
 
     public void setFormatDateTime(String formatDateTime) {
         this.formatDateTime = formatDateTime;
@@ -107,7 +125,7 @@ public class CalcOperation {
                 ", action = " + action + "  " +
                 ", result = " + result + "  " +
                 ", date is " + formatDateTime +
-                ", user ID is " + userID + " }";
+                ", user ID is " + calculatorUser.getUserID() + " }";
     }
 
 }

@@ -9,13 +9,24 @@ import java.util.ArrayList;
 
 public class JDBCHistory implements History {
 
-    private  Connection connection;
+    CalculatorUser calculatorUser;
+    public JDBCHistory(CalculatorUser calculatorUser){
+        this.calculatorUser = calculatorUser;
+    }
 
+    public JDBCHistory() {
+
+    }
+
+
+//    private  Connection connection;
 //   JDBCPostgresConnection jdbcPostgresConnection = new JDBCPostgresConnection();
 
     private final String URL1 = "jdbc:postgresql://localhost:5432/postgres";
     private final String USER1 = "postgres";
     private final String PASSWORD1 = "PGPangalin013$";
+
+
 
     @Override
     public void writeHistory(CalcOperation calcOperation) {
@@ -87,7 +98,7 @@ public class JDBCHistory implements History {
                 String date = resultSet.getString(5);
                 Integer userID = resultSet.getInt(6);
 
-                CalcOperation calcOperation = new CalcOperation(num1, num2, action, result, date, userID);
+                CalcOperation calcOperation = new CalcOperation(num1, num2, action, result, date, calculatorUser.getUserID());
 
                 operationList.add(String.valueOf(calcOperation));
 

@@ -26,7 +26,7 @@ public class CalculatorServlet extends HttpServlet {
             Double num2 = Double.parseDouble(req.getParameter("num2"));
             String action = req.getParameter("action");
 
-            CalcOperation calcOperation = new CalcOperation(num1, num2, action, author.getUserID());
+            CalcOperation calcOperation = new CalcOperation(num1, num2, action, author);
 
             CalcOperation result = operationService.calculateResult(calcOperation, author);
 
