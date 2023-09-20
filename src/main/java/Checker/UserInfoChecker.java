@@ -28,10 +28,10 @@ public class UserInfoChecker {
     //Method for checking all new user's parameters required for registration
     public boolean checkRegisterParameters(String username, String userEmail, String userPassword) {
         if (checkUsername(username)
-                & checkUserEmail(userEmail)
-                & checkUserPassword(userPassword)
-                & isUsernameOccupied(username)
-                & isUserEmailOccupied(userEmail)) {
+                && checkUserEmail(userEmail)
+                && checkUserPassword(userPassword)
+                && isUsernameNotOccupied(username)
+                && isUserEmailNotOccupied(userEmail)) {
             return true;
         } else {
             return false;
@@ -73,26 +73,29 @@ public class UserInfoChecker {
 
 
     //Method for checking, if userName is already applied
-    public boolean isUsernameOccupied(String username) {
+    public boolean isUsernameNotOccupied(String username) {
 
-        List<CalculatorUser> calculatorUserList = userStorage.addUsersInfoToArrayList();
+        List<CalculatorUser> calculatorUserList = userStorage.getUsersArrayList();
 
         for (int i = 0; i < calculatorUserList.size(); i++) {
             if (calculatorUserList.get(i).getUsername().equalsIgnoreCase(username)) {
-                return true;
+                return false;
             }
         }
-        return false;
+        return true;
     }
 
 
     //Method for checking, if newUserEmail is already applied
-    public boolean isUserEmailOccupied(String userEmail) {
+    public boolean isUserEmailNotOccupied(String userEmail) {
 
-        for (int i = 0; i < userStorage.addUsersInfoToArrayList().size(); i++) {
+        for (int i = 0; i < userStorage.getUsersArrayList().size(); i++) {
 
-            return (userStorage.addUsersInfoToArrayList().get(i).getUserEmail()).equals(userEmail);
+            if (userStorage.getUsersArrayList().get(i).getUserEmail().equals(userEmail)) {
+
+                return false;
+            }
         }
-        return false;
-    }
+            return true;
+        }
 }

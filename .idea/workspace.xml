@@ -9,13 +9,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bc7b91d9-9355-49a6-868e-ffc41031e14b" name="Changes" comment="Small additions">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/19e120d0-8945-4df0-be95-008123c1fcb4.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/19e120d0-8945-4df0-be95-008123c1fcb4.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/CalculatorHistory/JDBCStorage/JDBCUserStorageStorage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/CalculatorHistory/JDBCStorage/JDBCUserStorageStorage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Servlets/AuthorisationServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Servlets/AuthorisationServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Servlets/RegistrationServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Servlets/RegistrationServlet.java" afterDir="false" />
-    </list>
+    <list default="true" id="bc7b91d9-9355-49a6-868e-ffc41031e14b" name="Changes" comment="Small additions" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -197,6 +191,7 @@
       <workItem from="1694898647841" duration="451000" />
       <workItem from="1694981945594" duration="2159000" />
       <workItem from="1695023896071" duration="13980000" />
+      <workItem from="1695193892041" duration="5145000" />
     </task>
     <task id="LOCAL-00001" summary="Methods for scope were created">
       <option name="closed" value="true" />
@@ -214,7 +209,15 @@
       <option name="project" value="LOCAL" />
       <updated>1695036001778</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Small additions">
+      <option name="closed" value="true" />
+      <created>1695129100696</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1695129100696</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -237,7 +240,8 @@
     <MESSAGE value="Packages for History, Services, Objects were created" />
     <MESSAGE value="Fixing bugs" />
     <MESSAGE value="Servlet package was completed" />
-    <option name="LAST_COMMIT_MESSAGE" value="Servlet package was completed" />
+    <MESSAGE value="Small additions" />
+    <option name="LAST_COMMIT_MESSAGE" value="Small additions" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

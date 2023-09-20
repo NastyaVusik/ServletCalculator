@@ -33,7 +33,7 @@ public class CalculatorServlet extends HttpServlet {
             resp.getWriter().println(result.toString());
         }
         else {
-            resp.getWriter().println("You have to logIn to use calculator");
+            resp.getWriter().println("<h1>You have to logIn to use calculator<h1>");
         }
 
 

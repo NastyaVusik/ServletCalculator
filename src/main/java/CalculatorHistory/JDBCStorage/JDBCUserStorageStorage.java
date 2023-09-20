@@ -27,7 +27,6 @@ public class JDBCUserStorageStorage implements UserStorage {
             Connection connection = DriverManager.getConnection(URL1, USER1, PASSWORD1);
 
             PreparedStatement prepareStatement = connection.prepareStatement("insert into \"Calculator_users\" values (?, ?, ?, ?, default)", Statement.RETURN_GENERATED_KEYS);
-//            prepareStatement.setInt(5, calculatorUser.getUserID());
 
             prepareStatement.setString(1, calculatorUser.getUsername());
 
@@ -38,7 +37,6 @@ public class JDBCUserStorageStorage implements UserStorage {
             prepareStatement.execute();
 
             ResultSet resultSet = prepareStatement.getGeneratedKeys();
-//            int generatedKey = 0;
 
             if (resultSet.next()) {
                 lastID = resultSet.getInt(5);
@@ -56,8 +54,7 @@ public class JDBCUserStorageStorage implements UserStorage {
 
 
     @Override
-    public List<CalculatorUser> addUsersInfoToArrayList() {
-//        List<CalculatorUser> usersInfoFromJDBCToList;
+    public List<CalculatorUser> getUsersArrayList() {
 
         List<CalculatorUser> usersInfoFromJDBCToList = new ArrayList<>();
 
@@ -65,8 +62,6 @@ public class JDBCUserStorageStorage implements UserStorage {
             Connection connection = DriverManager.getConnection(URL1, USER1, PASSWORD1);
             Statement statement = connection.createStatement();
             ResultSet resultSet = statement.executeQuery("select * from \"Calculator_users\"");
-//            usersInfoFromJDBCToList = new ArrayList<>();
-
 
             while (resultSet.next()) {
 
@@ -178,6 +173,8 @@ public class JDBCUserStorageStorage implements UserStorage {
                 preparedStatement.close();
 
                 CalculatorUser calculatorUser = new CalculatorUser(username, userPassword);
+                calculatorUser.setUserEmail(userEmail);
+                calculatorUser.setUserID(userID);
 return Optional.of(calculatorUser);
             }
 

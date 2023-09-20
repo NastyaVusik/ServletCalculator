@@ -30,15 +30,13 @@ public class RegistrationServlet extends HttpServlet {
         String userEmail = req.getParameter("userEmail");
         String userPassword = req.getParameter("userPassword");
 
-        calcUserService.createNewUser(username, userEmail, userPassword);
-
-        if (userInfoChecker.checkRegisterParameters(username, userEmail, userPassword)){
+        if (!userInfoChecker.checkRegisterParameters(username, userEmail, userPassword)){
             resp.getWriter().println("Your registration data is wrong or user with this data was already registered.\n" +
                     "Please, try again...");
         }
         else{
         calcUserService.createNewUser(username, userEmail, userPassword);
-            resp.sendRedirect("/login");
+            resp.sendRedirect("/");
         }
     }
 }

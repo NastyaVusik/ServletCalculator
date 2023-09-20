@@ -7,7 +7,7 @@ import java.util.Optional;
 
 public interface UserStorage {
     void saveNewUser(CalculatorUser calculatorUser);
-    List<CalculatorUser> addUsersInfoToArrayList();
+    List<CalculatorUser> getUsersArrayList();
     Optional <CalculatorUser> getOldUserByID(Integer userID);
 
     Optional <CalculatorUser> getUserByName(String username);
