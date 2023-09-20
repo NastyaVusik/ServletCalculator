@@ -3,7 +3,7 @@
   <database-model serializer="dbm" dbms="POSTGRES" family-id="POSTGRES" format-version="4.49">
     <root id="1">
       <DateStyle>dmy</DateStyle>
-      <IntrospectionStateNumber>862</IntrospectionStateNumber>
+      <IntrospectionStateNumber>902</IntrospectionStateNumber>
       <ServerVersion>15.4</ServerVersion>
       <StartupTime>1694877399</StartupTime>
       <TimeZones>true ACDT
@@ -802,7 +802,7 @@ false Zulu
 13183||10|C|G
 13183||-9223372036854775808|U|G
 13183||10|U|G</Grants>
-      <IntrospectionStateNumber>862</IntrospectionStateNumber>
+      <IntrospectionStateNumber>902</IntrospectionStateNumber>
       <ObjectId>5</ObjectId>
       <OwnerName>postgres</OwnerName>
     </database>
@@ -4229,9 +4229,9 @@ false Zulu
     <schema id="262" parent="2" name="public">
       <Comment>standard public schema</Comment>
       <Current>1</Current>
-      <IntrospectionStateNumber>862</IntrospectionStateNumber>
-      <IntrospectionTimestamp>2023-09-18.22:32:16.915</IntrospectionTimestamp>
-      <LocalIntrospectionTimestamp>2023-09-18.19:32:17</LocalIntrospectionTimestamp>
+      <IntrospectionStateNumber>902</IntrospectionStateNumber>
+      <IntrospectionTimestamp>2023-09-20.16:14:51.599</IntrospectionTimestamp>
+      <LocalIntrospectionTimestamp>2023-09-20.13:14:52</LocalIntrospectionTimestamp>
       <ObjectId>2200</ObjectId>
       <StateNumber>518</StateNumber>
       <OwnerName>pg_database_owner</OwnerName>
@@ -4239,7 +4239,7 @@ false Zulu
     <sequence id="263" parent="262" name="Calculator_users_id_seq">
       <DasType>integer|0s</DasType>
       <ObjectId>16444</ObjectId>
-      <SequenceIdentity>1(12)</SequenceIdentity>
+      <SequenceIdentity>1(32)</SequenceIdentity>
       <StartValue>1</StartValue>
       <StateNumber>821</StateNumber>
       <OwnerName>postgres</OwnerName>
@@ -4247,129 +4247,143 @@ false Zulu
     <sequence id="264" parent="262" name="greeting_id_seq">
       <DasType>integer|0s</DasType>
       <ObjectId>16468</ObjectId>
-      <SequenceIdentity>1(4)</SequenceIdentity>
+      <SequenceIdentity>1(20)</SequenceIdentity>
       <StartValue>1</StartValue>
       <StateNumber>857</StateNumber>
       <OwnerName>postgres</OwnerName>
     </sequence>
-    <table id="265" parent="262" name="Calculation_history">
+    <sequence id="265" parent="262" name="usersforlesson25_id_seq">
+      <DasType>integer|0s</DasType>
+      <ObjectId>16475</ObjectId>
+      <SequenceIdentity>1(10)</SequenceIdentity>
+      <StartValue>1</StartValue>
+      <StateNumber>891</StateNumber>
+      <OwnerName>postgres</OwnerName>
+    </sequence>
+    <table id="266" parent="262" name="Calculation_history">
       <ObjectId>16403</ObjectId>
       <StateNumber>743</StateNumber>
       <AccessMethodId>2</AccessMethodId>
       <OwnerName>postgres</OwnerName>
     </table>
-    <table id="266" parent="262" name="Calculation_historyWithUser">
+    <table id="267" parent="262" name="Calculation_historyWithUser">
       <ObjectId>16406</ObjectId>
       <StateNumber>746</StateNumber>
       <AccessMethodId>2</AccessMethodId>
       <OwnerName>postgres</OwnerName>
     </table>
-    <table id="267" parent="262" name="Calculator_users">
+    <table id="268" parent="262" name="Calculator_users">
       <ObjectId>16398</ObjectId>
       <StateNumber>821</StateNumber>
       <AccessMethodId>2</AccessMethodId>
       <OwnerName>postgres</OwnerName>
     </table>
-    <table id="268" parent="262" name="greeting">
+    <table id="269" parent="262" name="greeting">
       <ObjectId>16469</ObjectId>
       <StateNumber>857</StateNumber>
       <AccessMethodId>2</AccessMethodId>
       <OwnerName>postgres</OwnerName>
     </table>
-    <column id="269" parent="265" name="num1">
+    <table id="270" parent="262" name="usersforlesson25">
+      <ObjectId>16476</ObjectId>
+      <StateNumber>891</StateNumber>
+      <AccessMethodId>2</AccessMethodId>
+      <OwnerName>postgres</OwnerName>
+    </table>
+    <column id="271" parent="266" name="num1">
       <DasType>double precision|0s</DasType>
       <Position>1</Position>
       <StateNumber>743</StateNumber>
       <TypeId>701</TypeId>
     </column>
-    <column id="270" parent="265" name="num2">
+    <column id="272" parent="266" name="num2">
       <DasType>double precision|0s</DasType>
       <Position>2</Position>
       <StateNumber>743</StateNumber>
       <TypeId>701</TypeId>
     </column>
-    <column id="271" parent="265" name="action">
+    <column id="273" parent="266" name="action">
       <DasType>char|0s</DasType>
       <Position>3</Position>
       <StateNumber>743</StateNumber>
       <TypeId>1042</TypeId>
     </column>
-    <column id="272" parent="265" name="result">
+    <column id="274" parent="266" name="result">
       <DasType>double precision|0s</DasType>
       <Position>4</Position>
       <StateNumber>743</StateNumber>
       <TypeId>701</TypeId>
     </column>
-    <column id="273" parent="265" name="date">
+    <column id="275" parent="266" name="date">
       <DasType>char(255)|0s</DasType>
       <Position>5</Position>
       <StateNumber>743</StateNumber>
       <TypeId>1042</TypeId>
     </column>
-    <column id="274" parent="266" name="num1">
+    <column id="276" parent="267" name="num1">
       <DasType>double precision|0s</DasType>
       <Position>1</Position>
       <StateNumber>746</StateNumber>
       <TypeId>701</TypeId>
     </column>
-    <column id="275" parent="266" name="num2">
+    <column id="277" parent="267" name="num2">
       <DasType>double precision|0s</DasType>
       <Position>2</Position>
       <StateNumber>746</StateNumber>
       <TypeId>701</TypeId>
     </column>
-    <column id="276" parent="266" name="action">
+    <column id="278" parent="267" name="action">
       <DasType>char|0s</DasType>
       <Position>3</Position>
       <StateNumber>746</StateNumber>
       <TypeId>1042</TypeId>
     </column>
-    <column id="277" parent="266" name="result">
+    <column id="279" parent="267" name="result">
       <DasType>double precision|0s</DasType>
       <Position>4</Position>
       <StateNumber>746</StateNumber>
       <TypeId>701</TypeId>
     </column>
-    <column id="278" parent="266" name="date">
+    <column id="280" parent="267" name="date">
       <DasType>char(255)|0s</DasType>
       <Position>5</Position>
       <StateNumber>746</StateNumber>
       <TypeId>1042</TypeId>
     </column>
-    <column id="279" parent="266" name="userID">
+    <column id="281" parent="267" name="userID">
       <DasType>integer|0s</DasType>
       <Position>6</Position>
       <StateNumber>746</StateNumber>
       <TypeId>23</TypeId>
     </column>
-    <column id="280" parent="267" name="name">
+    <column id="282" parent="268" name="name">
       <DasType>varchar(255)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>2</Position>
       <StateNumber>798</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <column id="281" parent="267" name="email">
+    <column id="283" parent="268" name="email">
       <DasType>varchar(255)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>3</Position>
       <StateNumber>800</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <column id="282" parent="267" name="password">
+    <column id="284" parent="268" name="password">
       <DasType>varchar(255)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>4</Position>
       <StateNumber>802</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <column id="283" parent="267" name="registration date">
+    <column id="285" parent="268" name="registration date">
       <DasType>varchar(255)|0s</DasType>
       <Position>5</Position>
       <StateNumber>740</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <column id="284" parent="267" name="id">
+    <column id="286" parent="268" name="id">
       <DasType>integer|0s</DasType>
       <DefaultExpression>nextval(&apos;&quot;Calculator_users_id_seq&quot;&apos;::regclass)</DefaultExpression>
       <NotNull>1</NotNull>
@@ -4378,7 +4392,7 @@ false Zulu
       <SequenceId>16444</SequenceId>
       <TypeId>23</TypeId>
     </column>
-    <index id="285" parent="267" name="Calculator_users_name_key">
+    <index id="287" parent="268" name="Calculator_users_name_key">
       <ColNames>name</ColNames>
       <NameSurrogate>1</NameSurrogate>
       <ObjectId>16425</ObjectId>
@@ -4389,7 +4403,7 @@ false Zulu
       <CollationIds>100</CollationIds>
       <CollationParentNames>pg_catalog</CollationParentNames>
     </index>
-    <index id="286" parent="267" name="Calculator_users_pk">
+    <index id="288" parent="268" name="Calculator_users_pk">
       <ColNames>name</ColNames>
       <ObjectId>16427</ObjectId>
       <StateNumber>821</StateNumber>
@@ -4399,7 +4413,7 @@ false Zulu
       <CollationIds>100</CollationIds>
       <CollationParentNames>pg_catalog</CollationParentNames>
     </index>
-    <index id="287" parent="267" name="Calculator_users_pkey">
+    <index id="289" parent="268" name="Calculator_users_pkey">
       <ColNames>id</ColNames>
       <NameSurrogate>1</NameSurrogate>
       <ObjectId>16446</ObjectId>
@@ -4408,25 +4422,25 @@ false Zulu
       <Unique>1</Unique>
       <AccessMethodId>403</AccessMethodId>
     </index>
-    <key id="288" parent="267" name="Calculator_users_pkey">
+    <key id="290" parent="268" name="Calculator_users_pkey">
       <NameSurrogate>1</NameSurrogate>
       <ObjectId>16447</ObjectId>
       <Primary>1</Primary>
       <StateNumber>821</StateNumber>
       <UnderlyingIndexId>16446</UnderlyingIndexId>
     </key>
-    <key id="289" parent="267" name="Calculator_users_name_key">
+    <key id="291" parent="268" name="Calculator_users_name_key">
       <NameSurrogate>1</NameSurrogate>
       <ObjectId>16426</ObjectId>
       <StateNumber>776</StateNumber>
       <UnderlyingIndexId>16425</UnderlyingIndexId>
     </key>
-    <key id="290" parent="267" name="Calculator_users_pk">
+    <key id="292" parent="268" name="Calculator_users_pk">
       <ObjectId>16428</ObjectId>
       <StateNumber>779</StateNumber>
       <UnderlyingIndexId>16427</UnderlyingIndexId>
     </key>
-    <column id="291" parent="268" name="id">
+    <column id="293" parent="269" name="id">
       <DasType>integer|0s</DasType>
       <DefaultExpression>nextval(&apos;greeting_id_seq&apos;::regclass)</DefaultExpression>
       <NotNull>1</NotNull>
@@ -4435,14 +4449,14 @@ false Zulu
       <SequenceId>16468</SequenceId>
       <TypeId>23</TypeId>
     </column>
-    <column id="292" parent="268" name="name">
+    <column id="294" parent="269" name="name">
       <DasType>char(255)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>2</Position>
       <StateNumber>857</StateNumber>
       <TypeId>1042</TypeId>
     </column>
-    <index id="293" parent="268" name="greeting_pkey">
+    <index id="295" parent="269" name="greeting_pkey">
       <ColNames>id</ColNames>
       <NameSurrogate>1</NameSurrogate>
       <ObjectId>16473</ObjectId>
@@ -4451,12 +4465,58 @@ false Zulu
       <Unique>1</Unique>
       <AccessMethodId>403</AccessMethodId>
     </index>
-    <key id="294" parent="268" name="greeting_pkey">
+    <key id="296" parent="269" name="greeting_pkey">
       <NameSurrogate>1</NameSurrogate>
       <ObjectId>16474</ObjectId>
       <Primary>1</Primary>
       <StateNumber>857</StateNumber>
       <UnderlyingIndexId>16473</UnderlyingIndexId>
+    </key>
+    <column id="297" parent="270" name="id">
+      <DasType>integer|0s</DasType>
+      <DefaultExpression>nextval(&apos;usersforlesson25_id_seq&apos;::regclass)</DefaultExpression>
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+      <StateNumber>891</StateNumber>
+      <SequenceId>16475</SequenceId>
+      <TypeId>23</TypeId>
+    </column>
+    <column id="298" parent="270" name="name">
+      <DasType>varchar(255)|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>2</Position>
+      <StateNumber>891</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="299" parent="270" name="username">
+      <DasType>varchar(255)|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>3</Position>
+      <StateNumber>891</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="300" parent="270" name="password">
+      <DasType>varchar(255)|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>4</Position>
+      <StateNumber>891</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <index id="301" parent="270" name="usersforlesson25_pkey">
+      <ColNames>id</ColNames>
+      <NameSurrogate>1</NameSurrogate>
+      <ObjectId>16482</ObjectId>
+      <Primary>1</Primary>
+      <StateNumber>891</StateNumber>
+      <Unique>1</Unique>
+      <AccessMethodId>403</AccessMethodId>
+    </index>
+    <key id="302" parent="270" name="usersforlesson25_pkey">
+      <NameSurrogate>1</NameSurrogate>
+      <ObjectId>16483</ObjectId>
+      <Primary>1</Primary>
+      <StateNumber>891</StateNumber>
+      <UnderlyingIndexId>16482</UnderlyingIndexId>
     </key>
   </database-model>
 </dataSource>
