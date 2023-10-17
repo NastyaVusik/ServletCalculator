@@ -21,7 +21,7 @@ public class UserStorage {
 
     public Optional<User> getByUsername(String username) {
         try (Connection connection = DriverManager.getConnection
-                ("jdbc:postgresql://localhost:5432/postgres", "postgres", "PGPangalin013$")){
+                ("jdbc:postgresql://localhost:5432/postgres", "postgres", "root")){
 
             PreparedStatement preparedStatement = connection.prepareStatement("select * from  usersforlesson25 where username = ?");
             preparedStatement.setString(1, username);
@@ -33,7 +33,7 @@ public class UserStorage {
                 String username1 = resultSet.getString(3);
                 String password = resultSet.getString(4);
 
-                return Optional.of(new User(id, name, username, password));
+                return Optional.of(new User(id, name, username1, password));
             }
             return Optional.empty();
 

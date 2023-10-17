@@ -11,10 +11,18 @@ public class HelloServlet extends HttpServlet {
     private final GreetingStorage greetingStorage = new GreetingStorage();
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        String name = req.getParameter("name");
-        greetingStorage.save(name);
+       User name = (User) req.getSession().getAttribute("currentUser");
 
-        resp.getWriter().println("<h1>Hello," +  name + "!!!<h1>");
+       if(name != null){
+           resp.getWriter().println("<h1Hello, >" + name + "<!/h1>");
+       }
+       else {
+           resp.getWriter().println("<h1Hello, Guest!></h1>");
+       }
+//        String name = req.getParameter("name");
+//        greetingStorage.save(name);
+//
+//        resp.getWriter().println("<h1>Hello," +  name + "!!!<h1>");
 
 
     }
