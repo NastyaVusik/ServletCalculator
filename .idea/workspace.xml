@@ -9,13 +9,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bc7b91d9-9355-49a6-868e-ffc41031e14b" name="Changes" comment="Some bugs were fixed">
+    <list default="true" id="bc7b91d9-9355-49a6-868e-ffc41031e14b" name="Changes" comment="for keeping">
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/19e120d0-8945-4df0-be95-008123c1fcb4.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/19e120d0-8945-4df0-be95-008123c1fcb4.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/19e120d0-8945-4df0-be95-008123c1fcb4/storage_v2/_src_/database/postgres.edMnLQ/schema/public.abK9xQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/19e120d0-8945-4df0-be95-008123c1fcb4/storage_v2/_src_/database/postgres.edMnLQ/schema/public.abK9xQ.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/CalculatorHistory/JDBCStorage/JDBCHistory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/CalculatorHistory/JDBCStorage/JDBCHistory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Objects/CalcOperation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Objects/CalcOperation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Services/OperationService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Services/OperationService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Servlets/CalculatorServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Servlets/CalculatorServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Servlets/HelloUserServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Servlets/HelloUserServlet.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,7 +53,7 @@
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
     &quot;git-widget-placeholder&quot;: &quot;ServletCalculatorRev0&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/Nastya/IdeaProjects/ServletCalculator&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Nastya/IdeaProjects/insta-clone-22-onl&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -200,6 +197,11 @@
       <workItem from="1695023896071" duration="13980000" />
       <workItem from="1695193892041" duration="5145000" />
       <workItem from="1695208823098" duration="2576000" />
+      <workItem from="1695302679804" duration="600000" />
+      <workItem from="1695374050445" duration="2592000" />
+      <workItem from="1695410226928" duration="3036000" />
+      <workItem from="1695490135990" duration="706000" />
+      <workItem from="1695554420352" duration="48000" />
     </task>
     <task id="LOCAL-00001" summary="Methods for scope were created">
       <option name="closed" value="true" />
