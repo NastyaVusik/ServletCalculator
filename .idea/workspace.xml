@@ -9,8 +9,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bc7b91d9-9355-49a6-868e-ffc41031e14b" name="Changes" comment="small editions">
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+    <list default="true" id="bc7b91d9-9355-49a6-868e-ffc41031e14b" name="Changes" comment="In pom.xml was added jstl dependency">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/AppListener.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/AuthServlet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/GreetingStorage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/HelloServlet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/RegServlet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/User.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/UserService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/UserStorage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/HomeServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/logoutServlet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/home.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pages/home.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,13 +31,14 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="Jsp File" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="Lesson_22" />
+        <entry key="$PROJECT_DIR$" value="Lesson_25" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -54,7 +65,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "Lesson__25",
+    "git-widget-placeholder": "Lesson__27",
     "last_opened_file_path": "C:/Users/Nastya/IdeaProjects/ServletCalculator",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -70,6 +81,11 @@
     ]
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Nastya\IdeaProjects\ServletCalculator\src\main\webapp\pages" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration name="Tomcat 9.0.80" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.80" ALTERNATIVE_JRE_ENABLED="false">
       <option name="OPEN_IN_BROWSER" value="false" />
@@ -183,7 +199,7 @@
       <workItem from="1695110387508" duration="477000" />
       <workItem from="1695212123887" duration="5988000" />
       <workItem from="1695239256554" duration="1114000" />
-      <workItem from="1697713294230" duration="700000" />
+      <workItem from="1697713294230" duration="4807000" />
     </task>
     <task id="LOCAL-00001" summary="Methods for scope were created">
       <option name="closed" value="true" />
@@ -209,7 +225,15 @@
       <option name="project" value="LOCAL" />
       <updated>1697713319080</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="In pom.xml was added jstl dependency">
+      <option name="closed" value="true" />
+      <created>1697716243334</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1697716243334</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -231,6 +255,7 @@
     <MESSAGE value="Methods for scope were created" />
     <MESSAGE value="class logout was added" />
     <MESSAGE value="small editions" />
-    <option name="LAST_COMMIT_MESSAGE" value="small editions" />
+    <MESSAGE value="In pom.xml was added jstl dependency" />
+    <option name="LAST_COMMIT_MESSAGE" value="In pom.xml was added jstl dependency" />
   </component>
 </project>
