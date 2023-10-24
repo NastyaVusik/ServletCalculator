@@ -6,6 +6,7 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.sql.*;
 import java.util.List;
+import java.util.Date;
 import java.util.Optional;
 
 @WebServlet("/")
@@ -15,8 +16,9 @@ public class HomeServlet extends HttpServlet {
         String myName = req.getParameter("name");
         String myFlag = req.getParameter("flag");
 
-        List<String> stringList = List.of("Test1", "Test2", "Test3", "Test4", "Test5");
+        List<String> stringList = List.of("Tom1", "Tom2", "Tom3", "Tom4", "Tom5", "Tom6");
         req.setAttribute("users", stringList);
+        req.setAttribute("date", new Date());
 
         req.setAttribute("name", myName);
         req.setAttribute("flag", myFlag);

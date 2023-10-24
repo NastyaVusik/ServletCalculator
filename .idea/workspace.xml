@@ -9,18 +9,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bc7b91d9-9355-49a6-868e-ffc41031e14b" name="Changes" comment="In pom.xml was added jstl dependency">
+    <list default="true" id="bc7b91d9-9355-49a6-868e-ffc41031e14b" name="Changes" comment="HomeServlet, home.jsp ware created">
+      <change afterPath="$PROJECT_DIR$/.idea/webContexts.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/InMemoryUserStorage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/LoginServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/RegServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/logoutServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/pages/_header.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/pages/login.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/pages/reg.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/AppListener.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/AuthServlet.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/GreetingStorage.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/HelloServlet.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/RegServlet.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/User.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/UserService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/UserStorage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/HomeServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/logoutServlet.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/home.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pages/home.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/HomeServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/HomeServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/pages/home.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pages/home.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,8 +31,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Jsp File" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -42,6 +43,9 @@
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$USER_HOME$/AppData/Local/Temp/713069cb-c2b0-42ee-b6dd-4b3a3642df89_lesson-27-22-onl.zip.f89/lesson-27-22-onl/src/main/webapp/pages/reg.jsp" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="FORCE_HIGHLIGHTING" />
   </component>
   <component name="LogFilters">
     <option name="FILTER_ERRORS" value="false" />
@@ -82,6 +86,9 @@
   }
 }]]></component>
   <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="User" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Nastya\IdeaProjects\ServletCalculator\src\main\webapp\pages" />
     </key>
@@ -199,7 +206,11 @@
       <workItem from="1695110387508" duration="477000" />
       <workItem from="1695212123887" duration="5988000" />
       <workItem from="1695239256554" duration="1114000" />
-      <workItem from="1697713294230" duration="4807000" />
+      <workItem from="1697713294230" duration="5135000" />
+      <workItem from="1697793610602" duration="9872000" />
+      <workItem from="1697830162931" duration="3572000" />
+      <workItem from="1697915854693" duration="6880000" />
+      <workItem from="1698139100911" duration="5118000" />
     </task>
     <task id="LOCAL-00001" summary="Methods for scope were created">
       <option name="closed" value="true" />
@@ -233,7 +244,15 @@
       <option name="project" value="LOCAL" />
       <updated>1697716243334</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="HomeServlet, home.jsp ware created">
+      <option name="closed" value="true" />
+      <created>1697720738122</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1697720738122</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -256,6 +275,7 @@
     <MESSAGE value="class logout was added" />
     <MESSAGE value="small editions" />
     <MESSAGE value="In pom.xml was added jstl dependency" />
-    <option name="LAST_COMMIT_MESSAGE" value="In pom.xml was added jstl dependency" />
+    <MESSAGE value="HomeServlet, home.jsp ware created" />
+    <option name="LAST_COMMIT_MESSAGE" value="HomeServlet, home.jsp ware created" />
   </component>
 </project>
