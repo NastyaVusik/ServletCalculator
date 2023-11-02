@@ -9,8 +9,36 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bc7b91d9-9355-49a6-868e-ffc41031e14b" name="Changes" comment="Methods for scope were created">
+    <list default="true" id="bc7b91d9-9355-49a6-868e-ffc41031e14b" name="Changes" comment="SOLID was completed">
+      <change afterPath="$PROJECT_DIR$/src/main/java/SOLID_1/EmailSender.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/SOLID_1/Order.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/SOLID_1/OrderService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/SOLID_1/OrderStorage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/SOLID_2/Operation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/SOLID_2/OperationService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/SOLID_2/OperationStorage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/SOLID_2/SubOperation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/SOLID_2/SumOperation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/SOLID_3/EmailSender.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/SOLID_3/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/SOLID_3/Order.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/SOLID_3/OrderService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/SOLID_3/OrderStorage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/SOLID_3/OrderValidator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/SOLID_3/OrderValidatorWithLogging.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/SOLID_4/Cannon911Printer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/SOLID_4/OperationNotSupportedException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/SOLID_4/Printer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/SOLID_5/EmailSender.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/SOLID_5/Order.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/SOLID_5/OrderService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/SOLID_5/OrderStorage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/SOLID_5/Sender.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/SOLID_5/Storage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/HelloServlet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Scope1Servlet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Scope2Servlet.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,10 +49,16 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="Lesson_22" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="LogFilters">
@@ -43,23 +77,41 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;Lesson__22&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/Nastya/IdeaProjects/ConsoleCalculator&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "Lesson__29",
+    "last_opened_file_path": "C:/Users/Nastya/IdeaProjects/insta-clone-22-onl",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
-  <component name="RunManager">
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Nastya\IdeaProjects\ServletCalculator\src\main\java\SOLID_3" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="SOLID_5" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.Main">
+    <configuration name="Main" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="SOLID_3.SOLID_1.Main" />
+      <module name="ServletCalculator" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Tomcat 9.0.80" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.80" ALTERNATIVE_JRE_ENABLED="false">
       <option name="OPEN_IN_BROWSER" value="false" />
       <option name="UPDATING_POLICY" value="restart-server" />
@@ -148,6 +200,10 @@
         </option>
       </method>
     </configuration>
+    <list>
+      <item itemvalue="Application.Main" />
+      <item itemvalue="Tomcat Server.Tomcat 9.0.80" />
+    </list>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -168,6 +224,14 @@
       <workItem from="1694268430190" duration="663000" />
       <workItem from="1694329173194" duration="1041000" />
       <workItem from="1694331163483" duration="600000" />
+      <workItem from="1698411952565" duration="1629000" />
+      <workItem from="1698606709367" duration="5106000" />
+      <workItem from="1698654608420" duration="737000" />
+      <workItem from="1698692894856" duration="630000" />
+      <workItem from="1698738844333" duration="729000" />
+      <workItem from="1698753517104" duration="80000" />
+      <workItem from="1698868433340" duration="1202000" />
+      <workItem from="1698912835822" duration="392000" />
     </task>
     <task id="LOCAL-00001" summary="Methods for scope were created">
       <option name="closed" value="true" />
@@ -197,17 +261,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="classes HelloServlet, Scope1Servlet, Scope2Servlet were created" />
     <MESSAGE value="Methods for scope were created" />
-    <option name="LAST_COMMIT_MESSAGE" value="Methods for scope were created" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/Scope2Servlet.java</url>
-          <line>23</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <MESSAGE value="SOLID was completed" />
+    <option name="LAST_COMMIT_MESSAGE" value="SOLID was completed" />
   </component>
 </project>
