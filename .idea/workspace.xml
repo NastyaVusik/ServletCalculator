@@ -9,8 +9,30 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bc7b91d9-9355-49a6-868e-ffc41031e14b" name="Changes" comment="small editions">
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+    <list default="true" id="bc7b91d9-9355-49a6-868e-ffc41031e14b" name="Changes" comment="SOLID was completed">
+      <change afterPath="$PROJECT_DIR$/src/main/java/Builder/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Fabric/Button/Button.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Fabric/Button/ButtonFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Fabric/Button/HTMLButton.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Fabric/Button/WindowsButton.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Fabric/JdbcConnectionFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Fabric/OperatioFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Fabric/Operation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Fabric_method/Car.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Fabric_method/JdbcConnection.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Singleton/UserStorage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/df6eff10-fec2-4d2e-8fef-14ae56fef642.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/df6eff10-fec2-4d2e-8fef-14ae56fef642.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/AppListener.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/AuthServlet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/GreetingStorage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/HelloServlet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/RegServlet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/User.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/UserService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/UserStorage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/logoutServlet.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,6 +42,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -27,7 +50,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="Lesson_22" />
+        <entry key="$PROJECT_DIR$" value="Lesson_25" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -54,7 +77,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "Lesson__25",
+    "git-widget-placeholder": "Lesson__30",
     "last_opened_file_path": "C:/Users/Nastya/IdeaProjects/ServletCalculator",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -184,6 +207,9 @@
       <workItem from="1695212123887" duration="5988000" />
       <workItem from="1695239256554" duration="1114000" />
       <workItem from="1697713294230" duration="700000" />
+      <workItem from="1698998375889" duration="851000" />
+      <workItem from="1699037584749" duration="19000" />
+      <workItem from="1699432727394" duration="8836000" />
     </task>
     <task id="LOCAL-00001" summary="Methods for scope were created">
       <option name="closed" value="true" />
