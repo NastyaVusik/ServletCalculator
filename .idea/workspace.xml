@@ -9,30 +9,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bc7b91d9-9355-49a6-868e-ffc41031e14b" name="Changes" comment="SOLID was completed">
-      <change afterPath="$PROJECT_DIR$/src/main/java/Builder/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Fabric/Button/Button.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Fabric/Button/ButtonFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Fabric/Button/HTMLButton.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Fabric/Button/WindowsButton.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Fabric/JdbcConnectionFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Fabric/OperatioFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Fabric/Operation.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Fabric_method/Car.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Fabric_method/JdbcConnection.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Singleton/UserStorage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/df6eff10-fec2-4d2e-8fef-14ae56fef642.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/df6eff10-fec2-4d2e-8fef-14ae56fef642.xml" afterDir="false" />
+    <list default="true" id="bc7b91d9-9355-49a6-868e-ffc41031e14b" name="Changes" comment="Patherns: Singleton, Factory, Factory method, Builder were completed">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/AppListener.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/AuthServlet.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/GreetingStorage.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/HelloServlet.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/RegServlet.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/User.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/UserService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/UserStorage.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/logoutServlet.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,28 +49,28 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "Lesson__30",
-    "last_opened_file_path": "C:/Users/Nastya/IdeaProjects/ServletCalculator",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.keymap",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;Lesson__30&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Nastya/IdeaProjects/ServletCalculator&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.keymap&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "postgresql"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;postgresql&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RunManager">
     <configuration name="Tomcat 9.0.80" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.80" ALTERNATIVE_JRE_ENABLED="false">
       <option name="OPEN_IN_BROWSER" value="false" />
@@ -209,7 +187,8 @@
       <workItem from="1697713294230" duration="700000" />
       <workItem from="1698998375889" duration="851000" />
       <workItem from="1699037584749" duration="19000" />
-      <workItem from="1699432727394" duration="8836000" />
+      <workItem from="1699432727394" duration="9214000" />
+      <workItem from="1699474012310" duration="599000" />
     </task>
     <task id="LOCAL-00001" summary="Methods for scope were created">
       <option name="closed" value="true" />
@@ -235,7 +214,15 @@
       <option name="project" value="LOCAL" />
       <updated>1697713319080</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Patherns: Singleton, Factory, Factory method, Builder were completed">
+      <option name="closed" value="true" />
+      <created>1699448535522</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1699448535522</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -257,6 +244,7 @@
     <MESSAGE value="Methods for scope were created" />
     <MESSAGE value="class logout was added" />
     <MESSAGE value="small editions" />
-    <option name="LAST_COMMIT_MESSAGE" value="small editions" />
+    <MESSAGE value="Patherns: Singleton, Factory, Factory method, Builder were completed" />
+    <option name="LAST_COMMIT_MESSAGE" value="Patherns: Singleton, Factory, Factory method, Builder were completed" />
   </component>
 </project>
