@@ -9,8 +9,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bc7b91d9-9355-49a6-868e-ffc41031e14b" name="Changes" comment="Methods for scope were created">
+    <list default="true" id="bc7b91d9-9355-49a6-868e-ffc41031e14b" name="Changes" comment="Patherns: Singleton, Factory, Factory method, Builder were completed">
+      <change afterPath="$PROJECT_DIR$/src/main/java/Adapter/Client.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Adapter/ClientInterface.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Adapter/NewService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Adapter/OldService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Adapter/SpecialAdapter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Facade/HomeServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Facade/TestServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Facade/UserServiceFacade.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/HelloServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Scope1Servlet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Scope2Servlet.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,6 +36,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="Lesson_22" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="LogFilters">
@@ -48,8 +64,8 @@
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;Lesson__22&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/Nastya/IdeaProjects/ConsoleCalculator&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;Lesson__31&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Nastya/IdeaProjects/ServletCalculator&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -168,6 +184,10 @@
       <workItem from="1694268430190" duration="663000" />
       <workItem from="1694329173194" duration="1041000" />
       <workItem from="1694331163483" duration="600000" />
+      <workItem from="1699519481235" duration="1068000" />
+      <workItem from="1699522106366" duration="5214000" />
+      <workItem from="1699604837461" duration="601000" />
+      <workItem from="1699615383705" duration="630000" />
     </task>
     <task id="LOCAL-00001" summary="Methods for scope were created">
       <option name="closed" value="true" />
@@ -198,16 +218,5 @@
     <MESSAGE value="classes HelloServlet, Scope1Servlet, Scope2Servlet were created" />
     <MESSAGE value="Methods for scope were created" />
     <option name="LAST_COMMIT_MESSAGE" value="Methods for scope were created" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/Scope2Servlet.java</url>
-          <line>23</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>
