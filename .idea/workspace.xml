@@ -9,7 +9,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bc7b91d9-9355-49a6-868e-ffc41031e14b" name="Changes" comment="Patherns: Adapter, Decorator, Facade  were completed">
+    <list default="true" id="bc7b91d9-9355-49a6-868e-ffc41031e14b" name="Changes" comment="small additions">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -205,6 +205,7 @@
       <workItem from="1698868433340" duration="1202000" />
       <workItem from="1698912835822" duration="392000" />
       <workItem from="1698933562122" duration="620000" />
+      <workItem from="1699735286661" duration="687000" />
     </task>
     <task id="LOCAL-00001" summary="Methods for scope were created">
       <option name="closed" value="true" />
@@ -222,7 +223,15 @@
       <option name="project" value="LOCAL" />
       <updated>1698933575821</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="small additions">
+      <option name="closed" value="true" />
+      <created>1699735374374</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1699735374374</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -243,6 +252,7 @@
     <MESSAGE value="classes HelloServlet, Scope1Servlet, Scope2Servlet were created" />
     <MESSAGE value="Methods for scope were created" />
     <MESSAGE value="SOLID was completed" />
-    <option name="LAST_COMMIT_MESSAGE" value="SOLID was completed" />
+    <MESSAGE value="small additions" />
+    <option name="LAST_COMMIT_MESSAGE" value="small additions" />
   </component>
 </project>
